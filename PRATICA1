@@ -1,0 +1,31 @@
+create database banco;
+use banco;
+
+create table pessoa
+(Primeiro_nome char(50),
+Sobrenome char (50),
+Endereco char (50),
+Cidade char (50),
+Estado char (25),
+DataNascimento datetime);
+
+drop database banco;
+
+show Databases;
+show Tables;
+
+drop database banco;
+
+create table pessoa
+(Primeiro_nome char(50),
+Sobrenome char (50) not null,
+Endereco char (50),
+cidade char (25),
+idade integer check (idade>18)
+estado char (25) default "São Paulo",
+DataNascimento date);
+
+show databases;
+show tables;
+
+drop database teste
